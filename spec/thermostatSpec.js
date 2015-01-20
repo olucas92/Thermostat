@@ -20,8 +20,8 @@ describe("by default", function(){
     });
     it("can decrease", function(){
       thermostat.decreaseTemperature(1);
-      expect(thermostat.temperature).toEqual(19)
-    }
+      expect(thermostat.temperature).toEqual(19);
+    })
   });
 
 });
