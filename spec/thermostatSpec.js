@@ -36,10 +36,22 @@ describe("by default", function(){
   });
 
   describe("reset button", function(){
+    
     it("should reset temperature to 20 degrees", function(){
       thermostat.resetButton;
       expect(thermostat.temperature).toEqual(20)
+    });
+
+  });
+
+  describe("power save mode", function(){
+
+    it("should set a limit of 25 degrees when on", function(){
+      thermostat.powerSave
+      expect(thermostat.maximumTemp).toEqual(25)
     })
+
+    // it("should have a limit of 32 degrees when off")
 
   })
 
