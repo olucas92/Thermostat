@@ -26,11 +26,11 @@ describe("by default", function(){
 
   describe("minimum and maximum temp", function(){
     it("should have a maximum of 32 degrees", function(){
-
+      expect(thermostat.maximumTemp).toEqual(32)
     })
 
     it("should have a minimum of 10 degrees", function(){
-      
+      expect(thermostat.minimumTemp).toEqual(10)
     })
 
   })
