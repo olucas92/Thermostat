@@ -24,3 +24,7 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
    this.temperature -= changeTempBy;
   }
 };
+
+  Thermostat.prototype.resetButton = function(){
+    this.temperature = 20;
+  }

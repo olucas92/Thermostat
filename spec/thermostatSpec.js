@@ -33,6 +33,14 @@ describe("by default", function(){
       expect(thermostat.minimumTemp).toEqual(10)
     })
 
+  });
+
+  describe("reset button", function(){
+    it("should reset temperature to 20 degrees", function(){
+      thermostat.resetButton
+      expect(thermostat.temperature).toEqual(20)
+    })
+
   })
 
 });
