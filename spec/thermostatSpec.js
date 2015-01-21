@@ -21,17 +21,17 @@ describe("by default", function(){
     it("can decrease", function(){
       thermostat.decreaseTemperature(1);
       expect(thermostat.temperature).toEqual(19);
-    })
+    });
   });
 
   describe("minimum and maximum temp", function(){
-    it("should have a maximum of 25 degrees", function(){
-      expect(thermostat.maximumTemp).toEqual(25)
-    })
+    it("should have a maximum of 32 degrees", function(){
+      expect(thermostat.maximumTemp).toEqual(32)
+    });
 
     it("should have a minimum of 10 degrees", function(){
       expect(thermostat.minimumTemp).toEqual(10)
-    })
+    });
 
   });
 
@@ -44,18 +44,18 @@ describe("by default", function(){
 
   });
 
-  describe("power save mode", function(){
+  // describe("power save mode", function(){
 
-    it("should set a limit of 25 degrees when on", function(){
-      thermostat.powerSave
-      expect(thermostat.maximumTemp).toEqual(25)
-    });
+  //   it("should set a limit of 25 degrees when on", function(){
+  //     thermostat.powerSave
+  //     expect(thermostat.maximumTemp).toEqual(25)
+  //   });
 
-    it("should have a limit of 32 degrees when off", function(){
-      powerSave = false
-      expect(thermostat.maximumTemp).toEqual(32)
-    });
+  //   it("should have a limit of 32 degrees when off", function(){
+  //     powerSave = false
+  //     expect(thermostat.maximumTemp).toEqual(32)
+  //   });
      
-  });
+  // });
 
 });
