@@ -37,7 +37,7 @@ describe("by default", function(){
 
   describe("reset button", function(){
     it("should reset temperature to 20 degrees", function(){
-      thermostat.resetButton
+      thermostat.resetButton;
       expect(thermostat.temperature).toEqual(20)
     })
 

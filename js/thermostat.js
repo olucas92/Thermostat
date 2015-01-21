@@ -17,7 +17,7 @@ Thermostat.prototype.increaseTemperature = function(changeTempBy) {
 };
 
 Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
-  if (this.temperature + changeTempBy < this.minimumTemp){
+  if (this.temperature - changeTempBy < this.minimumTemp){
     this.temperature = this.minimumTemp
   }
   else {
