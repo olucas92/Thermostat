@@ -31,10 +31,6 @@ Thermostat.prototype.resetButton = function(){
   }
 
 Thermostat.prototype.powerSave = function(){
-  // if (this.powerSave = true){
-  //   this.maximumTemp = 25
-  // }
-  // else {
-  //   this.maximumTemp = 32
-  // }
+  this.maximumTemp = false
+  this.maxTempPowerSave = true
 }

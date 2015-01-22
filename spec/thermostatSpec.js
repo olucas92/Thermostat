@@ -44,18 +44,18 @@ describe("by default", function(){
 
   });
 
-  // describe("power save mode", function(){
+  describe("power save mode", function(){
 
-  //   it("should set a limit of 25 degrees when on", function(){
-  //     thermostat.powerSave
-  //     expect(thermostat.maximumTemp).toEqual(25)
-  //   });
+    it("should set a limit of 25 degrees when on", function(){
+      thermostat.powerSave
+      expect(thermostat.maxTempPowerSave).toEqual(25)
+    });
 
-  //   it("should have a limit of 32 degrees when off", function(){
-  //     powerSave = false
-  //     expect(thermostat.maximumTemp).toEqual(32)
-  //   });
+    it("should have a limit of 32 degrees when off", function(){
+      powerSave = false
+      expect(thermostat.maximumTemp).toEqual(32)
+    });
      
-  // });
+  });
 
 });
