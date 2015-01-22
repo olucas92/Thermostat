@@ -3,7 +3,7 @@ var Thermostat = function() {
   this.maximumTemp = 32;
   this.minimumTemp = 10;
   this.maxTempPowerSave = 25
-  // this.powerSave = true;
+  this.powerSave = true;
 
 
 };
