@@ -26,7 +26,8 @@ describe("changing temperature", function(){
 
 describe("minimum and maximum temp", function(){
   it("should have a maximum of 32 degrees", function(){
-    expect(thermostat.maximumTemp).toEqual(32)
+    thermostat.powerSave = false
+    expect(thermostat.maximumTemp()).toEqual(32)
   });
 
   it("should have a minimum of 10 degrees", function(){
@@ -47,13 +48,13 @@ describe("reset button", function(){
 describe("power save mode", function(){
 
   it("should set a limit of 25 degrees when on", function(){
-    thermostat.powerSave
-    expect(thermostat.maxTempPowerSave).toEqual(25)
+    thermostat.powerSave = true
+    expect(thermostat.maximumTemp()).toEqual(25)
   });
 
   it("should have a limit of 32 degrees when off", function(){
-    powerSave = false
-    expect(thermostat.maximumTemp).toEqual(32)
+    thermostat.powerSave = false
+    expect(thermostat.maximumTemp()).toEqual(32)
   });
      
 });
