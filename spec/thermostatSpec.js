@@ -63,16 +63,19 @@ describe("thermostat power usage colour coordination", function(){
 
   it("should be red when 25 degrees or over", function(){
     thermostat.increaseTemperature(5)
+    thermostat.temperatureColour()
     expect(thermostat.energyColour).toEqual("red")
   });
 
   it("should be green when between 19 and 24 degrees", function(){
     thermostat.increaseTemperature(1)
+    thermostat.temperatureColour()
     expect(thermostat.energyColour).toEqual("green")
   });
 
   it("should be blue when 18 degrees or below", function(){
     thermostat.decreaseTemperature(5)
+    thermostat.temperatureColour()
     expect(thermostat.energyColour).toEqual("blue")
   });
 });

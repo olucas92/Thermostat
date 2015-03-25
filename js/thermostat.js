@@ -39,7 +39,10 @@ Thermostat.prototype.resetButton = function(){
 };
 
 Thermostat.prototype.temperatureColour = function(){
-  if (this.temperature < 19) {this.energyColour = "blue";}
-  else if (this.temperature > 24) {this.energyColour = "red";}
+  if (this.temperature < 19) {
+    this.energyColour = "blue";
+  } else if (this.temperature > 24) {
+    this.energyColour = "red";
+  }
   else {this.energyColour = "green";}
 };
