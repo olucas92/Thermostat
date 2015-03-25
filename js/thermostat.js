@@ -35,7 +35,12 @@ Thermostat.prototype.decreaseTemperature = function(changeTempBy) {
 
 Thermostat.prototype.resetButton = function(){
   return this.temperature = this.defaultTemp
-  }
+};
+
+// Thermostat.prototype.colour = function(){
+//   if (this.temperature < 19) {this.colour = "blue"}
+// }
+
 
 // Thermostat.prototype.powerSave = function(){
 // }
