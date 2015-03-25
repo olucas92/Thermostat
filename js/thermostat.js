@@ -43,7 +43,3 @@ Thermostat.prototype.temperatureColour = function(){
   else if (this.temperature > 24) {this.energyColour = "red";}
   else {this.energyColour = "green";}
 };
-
-
-// Thermostat.prototype.powerSave = function(){
-// }
