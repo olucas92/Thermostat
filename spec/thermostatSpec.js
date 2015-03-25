@@ -59,6 +59,14 @@ describe("power save mode", function(){
      
 });
 
+describe("thermostat power usage colour coordination", function(){
+
+  it("should be red when 25 degrees or over", function(){
+    thermostat.temperature = 26
+    expect(thermostat.colour).toEqual("red")
+  });
+});
+
   // describe("")
 
 });
