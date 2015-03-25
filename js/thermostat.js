@@ -3,6 +3,7 @@ var Thermostat = function() {
   this.defaultTemp = 20
   this.minimumTemp = 10;
   this.powerSave = true;
+  this.energyColour = "green"
 
 
 };
@@ -38,8 +39,10 @@ Thermostat.prototype.resetButton = function(){
 };
 
 Thermostat.prototype.temperatureColour = function(){
-  if (this.temperature < 19) {this.temperatureColour = "blue"}
-}
+  if (this.temperature < 19) {this.energyColour = "blue"}
+  else if (this.temperature > 24) {this.energyColour = "red"}
+  else {this.energyColour = "green"}
+};
 
 
 // Thermostat.prototype.powerSave = function(){
