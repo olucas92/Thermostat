@@ -70,6 +70,11 @@ describe("thermostat power usage colour coordination", function(){
     thermostat.increaseTemperature(1)
     expect(thermostat.colour).toEqual("green")
   });
+
+  it("should be blue when 18 degrees or below", function(){
+    thermostat.decreaseTemperature(5)
+    expect(therostat.colour).toEqual("blue")
+  });
 });
 
   // describe("")
