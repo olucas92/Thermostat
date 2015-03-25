@@ -17,8 +17,8 @@ Thermostat.prototype.maximumTemp = function() {
 };
 
 Thermostat.prototype.increaseTemperature = function(changeTempBy) {
-  if (this.temperature + changeTempBy > this.maximumTemp){
-    this.temperature = this.maximumTemp
+  if (this.temperature + changeTempBy > this.maximumTemp()){
+    this.temperature = this.maximumTemp()
   }  
   else {
    this.temperature += changeTempBy;

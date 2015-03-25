@@ -34,6 +34,23 @@ describe("minimum and maximum temp", function(){
     expect(thermostat.minimumTemp).toEqual(10)
   });
 
+  it("should not be able to go beneath 10 degrees", function(){
+    thermostat.decreaseTemperature(23)
+    expect(thermostat.temperature).toEqual(10)
+  });
+
+  it("should not be able to go above 25 degrees when power save is on", function(){
+    thermostat.powerSave = true
+    thermostat.increaseTemperature(15)
+    expect(thermostat.temperature).toEqual(25)
+  });
+
+  it("should not be able to go above 32 degrees when power save is off", function(){
+    thermostat.powerSave = false
+    thermostat.increaseTemperature(20)
+    expect(thermostat.temperature).toEqual(32)
+  });
+
 });
 
 describe("reset button", function(){
