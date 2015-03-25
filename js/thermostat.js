@@ -3,7 +3,7 @@ var Thermostat = function() {
   this.defaultTemp = 20
   this.minimumTemp = 10;
   this.powerSave = true;
-  this.energyColour = "green"
+  this.energyColour = "green";
 
 
 };
