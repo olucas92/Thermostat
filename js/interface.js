@@ -21,4 +21,9 @@ $(document).ready(function(){
     thermostat.resetButton();
     updateTemperature();
   });
+
+  $('#power-save').on('click', function(){
+    thermostat.powerSave();
+    updateTemperature();
+  });
 });
