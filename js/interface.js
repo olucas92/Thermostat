@@ -4,6 +4,11 @@ var updateTemperature = function(){
   $('#temperature').text(thermostat.temperature)
 };
 
+var updateColour = function(){
+  thermostat.temperatureColour
+  $('#energy-colour').addClass(thermostat.energyColour)
+};
+
 $(document).ready(function(){
   updateTemperature();
 
