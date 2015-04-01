@@ -9,6 +9,10 @@ var updateColour = function(){
   $('#energy-colour').addClass(thermostat.energyColour)
 };
 
+var removePowerSavingColours = function() {
+  $('#power-saving-mode').removeClass();
+};
+
 $(document).ready(function(){
   updateTemperature();
 
