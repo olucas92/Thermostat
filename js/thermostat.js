@@ -4,6 +4,7 @@ var Thermostat = function() {
   this.minimumTemp = 10;
   this.powerSave = true;
   this.energyColour = "green";
+  this.energyUsage = "medium-usage";
 
 
 };

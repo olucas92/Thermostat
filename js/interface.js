@@ -6,6 +6,10 @@ var updateTemperature = function(){
   $('#temperature').text(thermostat.temperature)
 };
 
+var powerSavingColours = function(){
+  ('#power-saving-mode').addClass(thermostat.energyUsage);
+};
+
 var removeColour = function(){
   $('#energy-colour').removeClass();
 };
