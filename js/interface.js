@@ -1,7 +1,13 @@
 var thermostat = new Thermostat();
 
 var updateTemperature = function(){
+  removeColour();
+  updateColour();
   $('#temperature').text(thermostat.temperature)
+};
+
+var removeColour = function(){
+  $('#energy-colour').removeClass();
 };
 
 var updateColour = function(){
